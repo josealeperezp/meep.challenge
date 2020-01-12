@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+	http://dozer.sourceforge.net/schema/beanmapping.xsd"> 
+    
+	<mapping map-id="dto_to_entity">
+		<class-a>com.meep.challenge.dto.VehicleDTO</class-a>
+		<class-b>com.meep.challenge.dto.VehicleEntity</class-b>
+		<field-exclude>
+			<a>id</a>
+			<b>id</b>
+		</field-exclude>
+		<field>
+			<a>id</a>
+			<b>vehicleId</b>
+		</field>
+	</mapping>
+	
+	<mapping map-id="entity_to_dto">
+		<class-a>com.meep.challenge.dto.VehicleEntity</class-a>
+		<class-b>com.meep.challenge.dto.VehicleDTO</class-b>
+		<field-exclude>
+			<a>id</a>
+			<b>id</b>
+		</field-exclude>
+		<field>
+			<a>vehicleId</a>
+			<b>id</b>
+		</field>
+	</mapping>
+</mappings>
